@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation</title>
+  <style>
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    h2{
+      text-align: center;
+      margin: 10px 10px;
+      font: 700 40px "Arial" , sans-serif;
+    }
+    a{
+      text-decoration: none;
+    }
+    /*vertical menu*/
+    .v{ 
+      width: 20%;
+      margin: 0 auto;
+      list-style-type: none;
+  
+    }
+    .v__link{
+      display: block;
+      font: 500 18px "Verdana" , sans-serif;
+      color: #000;
+      padding: 7px 0 7px 12px;
+      background-color: #F1F1F1;
+      transition: all .3s linear;
+    }
+    
+    .v__link:hover{
+      background-color: #666;
+      color: #fff; 
+    }
+
+    /*horizontal menu*/
+    .h{
+      background-color:#333333; 
+      width: 50%;
+      list-style-type: none;
+      margin: 0 auto;
+    }
+    .h__item{
+      display: inline-block;
+    }
+    .h__item:last-child{
+      float: right;
+    }
+    .h__link{
+      display: block;
+      padding: 12px 10px;
+      color: #fff;
+      transition: all .3s linear;
+    }
+    .h__link:hover{
+      background-color: #000;
+    }
+    
+  </style>
+</head>
+
+<body>
+
+  <div class="vertical__nav">
+    <h2>Vertical navigation</h2>
+    <ul class="v">
+      <li class="v__item"><a class="v__link" href="#">Home</a></li>
+      <li class="v__item"><a class="v__link" href="#">News</a></li>
+      <li class="v__item"><a class="v__link" href="#">Contact</a></li>
+      <li class="v__item"><a class="v__link" href="#">About</a></li>
+    </ul>
+  </div>
+
+  <div class="horizontal__nav">
+    <h2>Horizontal navigation</h2>
+    <ul class="h">
+      <li class="h__item"><a class="h__link" href="#">Home</a></li>
+      <li class="h__item"><a class="h__link" href="#">News</a></li>
+      <li class="h__item"><a class="h__link" href="#">Contact</a></li>
+      <li class="h__item"><a class="h__link" href="#">About</a></li>
+    </ul>
+  </div>
+</body>
+
+</html>
